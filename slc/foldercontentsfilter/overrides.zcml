@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="slc.foldercontentsfilter">
+
+    <browser:page
+        for="*"
+        class=".browser.foldercontents.FolderContentsFilterView"
+        name="folder_contents"
+        template="browser/foldercontents.pt"
+        permission="cmf.ListFolderContents" 
+        />
+
+</configure>

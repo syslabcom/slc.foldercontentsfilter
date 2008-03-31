@@ -6,7 +6,7 @@
     <div id="portal-searchbox" i18n:domain="slc.foldercontentsfilter">
         <h6>&nbsp;</h6>
         <form   name="searchform" action="search"
-                tal:attributes="action string:${view/portal_url}/folder_contents">
+                tal:attributes="action string:folder_contents">
             <label  for="searchGadget" 
                     class="hiddenStructure"
                     i18n:translate="text_search_folder">
