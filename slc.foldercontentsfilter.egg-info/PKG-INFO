@@ -1,0 +1,31 @@
+Metadata-Version: 1.0
+Name: slc.foldercontentsfilter
+Version: 0.1dev
+Summary: A livesearch box for folder_contents to quickly find items in a large folder
+Home-page: https://svn.plone.org/svn/collective/slc.foldercontentsfilter
+Author: Syslab.com GmbH
+Author-email: info@syslab.com
+License: GPL
+Description: slc.foldercontentsfilter Package Readme
+        =========================
+        
+        Overview
+        --------
+        
+        A livesearch box for folder_contents to quickly find items in a large folder
+        
+        Changelog for slc.foldercontentsfilter
+        
+        (name of developer listed in brackets)
+        
+        slc.foldercontentsfilter - 0.1 Unreleased
+        
+        - Initial package structure.
+        [zopeskel]
+        
+        
+Keywords: livesearch folder_contents filter
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

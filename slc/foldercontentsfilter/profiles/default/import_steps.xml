@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="slc.foldercontentsfilter.various"
+               version="20080307-01"
+               handler="slc.foldercontentsfilter.setuphandlers.setupVarious"
+               title="slc.foldercontentsfilter: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

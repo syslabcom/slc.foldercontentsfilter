@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="slc.foldercontentsfilter">
+
+    <browser:viewlet
+        for="*"
+        name="slc.foldercontentsfilter.global_searchbox"
+        manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+        class=".viewlets.FolderContentsSearchBoxViewlet"
+        permission="cmf.ListFolderContents"        
+        />
+
+</configure>

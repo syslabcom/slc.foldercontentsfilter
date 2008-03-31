@@ -1,0 +1,55 @@
+<div tal:define="
+        hereURL request/URL;
+        page python: hereURL[hereURL.rfind('/'):]"
+    tal:condition="python:page=='/folder_contents'"
+    tal:omit-tag="">
+    <div id="portal-searchbox" i18n:domain="slc.foldercontentsfilter">
+        <h6>&nbsp;</h6>
+        <form   name="searchform" action="search"
+                tal:attributes="action string:${view/portal_url}/folder_contents">
+            <label  for="searchGadget" 
+                    class="hiddenStructure"
+                    i18n:translate="text_search_folder">
+                    Search Folder
+            </label>
+            <div class="LSBox">
+                <input  name="Title"
+                        type="text"
+                        size="18"
+                        value=""
+                        title="Search Folder"
+                        accesskey="4"
+                        i18n:attributes="title title_search_folder;"
+                        tal:attributes="
+                            value request/Title|nothing;
+                            id view/search_input_id"
+                        class="inputLabel" />
+                <input  class="searchButton"
+                        type="submit"
+                        value="Search"
+                        i18n:attributes="value label_search;" />
+                <div class="searchSection">
+                    <input  id="searchbox_currentfolder_only" 
+                            class="noborder"
+                            type="hidden" 
+                            name="path"
+                            checked="checked"
+                            tal:attributes="value view/folder_path" />
+                       
+                </div>
+                <div class="LSResult" id="LSResult" style="">
+                    <div class="LSShadow" id="LSShadow"></div>
+                </div>
+            </div>
+        </form>
+
+        <div id="portal-advanced-search" class="hiddenStructure">
+            <a  href="#"
+                tal:attributes="href string:${view/portal_url}/search_form"
+                i18n:translate="label_advanced_search"
+                accesskey="5">
+                Advanced Search&hellip;
+            </a>
+        </div>
+    </div>
+</div>

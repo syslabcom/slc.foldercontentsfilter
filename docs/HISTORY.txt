@@ -1,0 +1,9 @@
+Changelog for slc.foldercontentsfilter
+
+    (name of developer listed in brackets)
+
+slc.foldercontentsfilter - 0.1 Unreleased
+
+    - Initial package structure.
+      [zopeskel]
+
