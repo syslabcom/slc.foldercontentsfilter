@@ -62,8 +62,8 @@
               id="foldercontents-size-column">&nbsp;<tal:size i18n:translate="listingheader_size"
               >Size</tal:size>&nbsp;</th>
           <th class="nosort column"
-              id="foldercontents-modified-column">&nbsp;<tal:modified i18n:translate="listingheader_modified"
-              >Modified</tal:modified>&nbsp;</th>
+              id="foldercontents-modified-column">&nbsp;<a tal:attributes="href string:${view/url}?pagenumber=${request/pagenumber|string:1}&sort_on=modified&sort_order=${request/sort_order|string:descending}"><tal:modified i18n:translate="listingheader_modified"
+              >Modified</tal:modified></a>&nbsp;</th>
           <th class="nosort column"
               id="foldercontents-status-column">&nbsp;<a tal:attributes="href string:${view/url}?pagenumber=${request/pagenumber|string:1}&sort_on=review_state&sort_order=${request/sort_order|string:descending}"><tal:state i18n:translate="listingheader_status"
               >State</tal:state></a>&nbsp;</th>
