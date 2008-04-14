@@ -18,11 +18,11 @@ class FolderContentsFilterView(FolderContentsView):
         if title != '':
             title = title + '*'
         path = self.request.get('path', '')
-        depth = self.request.get('depth',1)
+        #depth = self.request.get('depth',1)
         if title:
             contentFilter = { 'Title': title
-                            , 'path': { 'query': path
-                                      , 'depth': depth}
+                            , 'path': { 'query': path}
+#                                      , 'depth': depth}
                             }
         else:
             contentFilter = {}
