@@ -10,5 +10,6 @@
    <include package=".browser" />
 
    <include file="profiles.zcml" />
+   <include file="skins.zcml" />
 
 </configure>
