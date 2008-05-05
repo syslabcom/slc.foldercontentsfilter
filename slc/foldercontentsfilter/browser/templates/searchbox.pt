@@ -21,9 +21,8 @@
                         accesskey="4"
                         i18n:attributes="title title_search_folder;"
                         tal:attributes="
-                            value request/Title|nothing;
-                            id view/search_input_id"
-                        class="inputLabel" />
+                            value request/Title|nothing;"
+                        class="inputLabel portlet-search-gadget" />
                 <input  class="searchButton"
                         type="submit"
                         value="Search"
