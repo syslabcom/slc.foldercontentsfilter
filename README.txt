@@ -12,3 +12,6 @@ the current folder.
 It also changes the way the contents are displayed to be
 reverse by PositionInParent so that newly added elements appear on top instead 
 of below. This behaviour may not fit everybody and I should make this configurable.
+
+
+The package also overrides the livesearch so that it is possible to search for Title only instead of SearchableText.
