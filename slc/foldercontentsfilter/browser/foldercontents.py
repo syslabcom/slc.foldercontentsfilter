@@ -18,20 +18,18 @@ class FolderContentsFilterView(FolderContentsView):
         if title != '':
             title = title + '*'
         path = self.request.get('path', '')
-        #depth = self.request.get('depth',1)
         if title:
             contentFilter = { 'Title': title
                             , 'path': { 'query': path}
-#                                      , 'depth': depth}
                             }
         else:
             contentFilter = {}
             
-        sort_on = self.request.get('sort_on', 'sortable_title')
+        sort_on = self.request.get('sort_on', 'getObjPositionInParent')
         if sort_on!='':
             contentFilter['sort_on'] = sort_on
 
-        sort_order = self.request.get('sort_order', '')
+        sort_order = self.request.get('sort_order', 'reverse')
         if sort_order!='':
             contentFilter['sort_order'] = sort_order
             
