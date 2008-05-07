@@ -27,7 +27,7 @@ var livesearch = function (){
         var $$result = $form.find('div.LSResult');
         var $shadow = $form.find('div.LSShadow');
         var $path = $form.find('input[name=path]');
-
+        
         function _hide() {
             // hides the result window
             $$result.hide();
