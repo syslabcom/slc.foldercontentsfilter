@@ -35,8 +35,9 @@ class FolderContentsFilterView(FolderContentsView):
             contentFilter = {}
             sort_on = self.request.get('sort_on', 'getObjPositionInParent')
             contentFilter['sort_on'] = sort_on
-            sort_order = self.request.get('sort_order', 'reverse')
-            contentFilter['sort_order'] = sort_order
+            sort_order = self.request.get('sort_order', '')
+            if sort_order:
+                contentFilter['sort_order'] = sort_order
             
         table = FCFFolderContentsTable(self.context, 
                                     self.request, 
