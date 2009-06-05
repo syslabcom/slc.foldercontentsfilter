@@ -1,17 +1,16 @@
-slc.foldercontentsfilter Package Readme
-=========================
+.. contents::
 
-Overview
---------
-
-A livesearch box for folder_contents to quickly find items in a large folder
-
-It displays a livesearch box within folder_contents which searches only within 
-the current folder. 
-
-It also changes the way the contents are displayed to be
-reverse by PositionInParent so that newly added elements appear on top instead 
-of below. This behaviour may not fit everybody and I should make this configurable.
+.. Note!
+   -----
+   
+   - code repository
+   - bug tracker
+   - questions/comments feedback mail
 
 
-The package also overrides the livesearch so that it is possible to search for Title only instead of SearchableText.
+- Code repository: https://svn.plone.org/svn/collective/slc.foldercontentsfilter
+- Questions and comments to info (at) syslab (dot) com
+- Report bugs at http://products.syslab.com/products/slc.foldercontentsfilter/issues
+
+
+
