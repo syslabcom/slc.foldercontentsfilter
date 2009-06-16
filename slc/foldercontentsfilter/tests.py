@@ -10,7 +10,7 @@ from Products.PloneTestCase import PloneTestCase as ptc
 from Products.PloneTestCase.layer import PloneSite
 ptc.setupPloneSite()
 
-import MyFolderContents.MyFolderContents
+import slc.foldercontentsfilter
 
 class TestCase(ptc.PloneTestCase):
     class layer(PloneSite):
@@ -18,7 +18,7 @@ class TestCase(ptc.PloneTestCase):
         def setUp(cls):
             fiveconfigure.debug_mode = True
             zcml.load_config('configure.zcml',
-                             MyFolderContents.MyFolderContents)
+                             slc.foldercontentsfilter)
             fiveconfigure.debug_mode = False
 
         @classmethod
