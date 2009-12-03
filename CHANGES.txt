@@ -1,6 +1,11 @@
 slc.foldercontentsfilter Changelog
 ==================================
 
+slc.foldercontentsfilter 1.3 (unreleased)
+-----------------------------------------
+
+- Added EUPL license (deroiste)
+
 slc.foldercontentsfilter 1.2 (2009-06-17)
 -----------------------------------------
 
