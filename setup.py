@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '1.2'
+version = '1.3dev'
 
 long_description = (
     read('README.txt')
@@ -63,8 +63,9 @@ setup(name='slc.foldercontentsfilter',
       extras_require=dict(tests=tests_require),
       test_suite = 'slc.foldercontentsfilter.tests.test_docs.test_suite',
       entry_points="""
-      # -*- entry_points -*- 
+      [z3c.autoinclude.plugin]
+      target = plone
       """,
-      paster_plugins = ["ZopeSkel"],
+
       )      
       
