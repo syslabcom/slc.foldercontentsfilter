@@ -53,19 +53,19 @@
           </th>
         </tr>
 
-        <tr>
+        <tr tal:define="batch_url python:'%s?pagenumber=%s&sort_order=%s' %(view.url, request.get('pagenumber', 1), request.get('sort_order', 'descending'))">
           <th class="nosort">&nbsp;</th>
           <th class="nosort column"
-              id="foldercontents-title-column">&nbsp;<a tal:attributes="href string:${view/url}?pagenumber=${request/pagenumber|string:1}&sort_on=sortable_title&sort_order=${request/sort_order|string:descending}"><tal:title i18n:translate="listingheader_title"
+              id="foldercontents-title-column">&nbsp;<a tal:attributes="href string:${batch_url}&sort_on=sortable_title"><tal:title i18n:translate="listingheader_title"
               >Title</tal:title></a>&nbsp;</th>
           <th class="nosort column"
               id="foldercontents-size-column">&nbsp;<tal:size i18n:translate="listingheader_size"
               >Size</tal:size>&nbsp;</th>
           <th class="nosort column"
-              id="foldercontents-modified-column">&nbsp;<a tal:attributes="href string:${view/url}?pagenumber=${request/pagenumber|string:1}&sort_on=modified&sort_order=${request/sort_order|string:descending}"><tal:modified i18n:translate="listingheader_modified"
+              id="foldercontents-modified-column">&nbsp;<a tal:attributes="href string:${batch_url}&sort_on=modified"><tal:modified i18n:translate="listingheader_modified"
               >Modified</tal:modified></a>&nbsp;</th>
           <th class="nosort column"
-              id="foldercontents-status-column">&nbsp;<a tal:attributes="href string:${view/url}?pagenumber=${request/pagenumber|string:1}&sort_on=review_state&sort_order=${request/sort_order|string:descending}"><tal:state i18n:translate="listingheader_status"
+              id="foldercontents-status-column">&nbsp;<a tal:attributes="href string:${batch_url}&sort_on=review_state"><tal:state i18n:translate="listingheader_status"
               >State</tal:state></a>&nbsp;</th>
           <th class="nosort column"
               id="foldercontents-order-column"
